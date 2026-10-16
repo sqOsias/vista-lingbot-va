@@ -1,0 +1,740 @@
+{
+  "status": "passed",
+  "checks": 136,
+  "passed": 136,
+  "failures": [],
+  "details": [
+    {
+      "name": "source:evaluation/evaluate_phase10_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:evaluation/run_phase10_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/continuing_phase10_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/phase10_v2_lingbot_server.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/manage_phase10_v2.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:configs/phase10_v2_lingbot.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/robotwin_numeric_contract.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/rmbench_d435_phase9.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/spatial_executor_v7.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/task_spatial_executor_v7_v4.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:runtime/task_spatial_executor_v7_v3.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:evaluation/evaluate_put_back_s3_v5.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:phase2_runtime.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source:docs/plans/S3\u63a5\u53e3\u8bca\u65ad_\u5355\u5e03\u5c40\u4fee\u8ba2\u65b9\u6848_v2_20261015.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "v1_and_old_repository_evidence_unchanged",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "continuation_development_passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 130,
+        "WAM_commands": 130
+      }
+    },
+    {
+      "name": "text_00_T_explicit_front:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_00_T_explicit_front:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 129,
+        "WAM_commands": 129
+      }
+    },
+    {
+      "name": "text_01_T_suffix_front:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_01_T_suffix_front:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_02_T_explicit_left:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_02_T_explicit_left:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_03_T_suffix_back:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_03_T_suffix_back:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_04_T_explicit_back:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_04_T_explicit_back:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_05_T_suffix_left:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_05_T_suffix_left:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_06_T_suffix_right:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_06_T_suffix_right:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "text_07_T_explicit_right:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "text_07_T_explicit_right:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "visual_00_V_back:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_00_V_back:all_policy_pixels_independently_verified",
+      "passed": true,
+      "detail": {
+        "created_inputs": 57
+      }
+    },
+    {
+      "name": "visual_00_V_back:no_unmarked_input_submitted",
+      "passed": true,
+      "detail": {
+        "submitted_input_files": 53
+      }
+    },
+    {
+      "name": "visual_00_V_back:magenta_survives_published_resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "visual_01_V_left:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_01_V_left:all_policy_pixels_independently_verified",
+      "passed": true,
+      "detail": {
+        "created_inputs": 57
+      }
+    },
+    {
+      "name": "visual_01_V_left:no_unmarked_input_submitted",
+      "passed": true,
+      "detail": {
+        "submitted_input_files": 53
+      }
+    },
+    {
+      "name": "visual_01_V_left:magenta_survives_published_resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 224,
+        "WAM_commands": 224
+      }
+    },
+    {
+      "name": "visual_02_V_right:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_02_V_right:all_policy_pixels_independently_verified",
+      "passed": true,
+      "detail": {
+        "created_inputs": 57
+      }
+    },
+    {
+      "name": "visual_02_V_right:no_unmarked_input_submitted",
+      "passed": true,
+      "detail": {
+        "submitted_input_files": 53
+      }
+    },
+    {
+      "name": "visual_02_V_right:magenta_survives_published_resize",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:action_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:real_video_evidence",
+      "passed": true,
+      "detail": {
+        "video_frames": 129,
+        "WAM_commands": 129
+      }
+    },
+    {
+      "name": "visual_03_V_front:all_commands_are_decoded_WAM",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:complete_reset_and_exact_initial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:native_caches_empty_on_reset",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:actual_model_prompt_matches_requested",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:prefix_isolated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:target_specific_stop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:strict_success_has_one_second_hold",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "visual_03_V_front:all_policy_pixels_independently_verified",
+      "passed": true,
+      "detail": {
+        "created_inputs": 33
+      }
+    },
+    {
+      "name": "visual_03_V_front:no_unmarked_input_submitted",
+      "passed": true,
+      "detail": {
+        "submitted_input_files": 29
+      }
+    },
+    {
+      "name": "visual_03_V_front:magenta_survives_published_resize",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}

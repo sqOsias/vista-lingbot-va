@@ -1,0 +1,11 @@
+{
+  "original_function_sha256": "5a2464b31378840a78a0bec66ce59a946a68959db73de56ce12905cfd025d35c",
+  "scoped_function_sha256": "bdd0130c3c495cb0d241f731ca5c81f5bd2820d9640c528a87b382d0833be542",
+  "changes": [
+    "remove eval_success from command admission guard; keep command limit",
+    "retain native check_success and latched eval_success; log first event instead of returning from physical loop"
+  ],
+  "native_success_flag_cleared": false,
+  "official_success_definition_changed": false,
+  "repository_files_changed": false
+}

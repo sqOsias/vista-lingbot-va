@@ -1,0 +1,10 @@
+[
+  {
+    "frame_id": 0,
+    "camera": "head_camera",
+    "path": "000000_head_camera_000000.png",
+    "source": "observation",
+    "note": "",
+    "sha256": "e97efc11dda10d601a1b571e05621e941daa9f0df8c86a1d95421fb051e17842"
+  }
+]

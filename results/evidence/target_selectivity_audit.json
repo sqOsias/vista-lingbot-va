@@ -1,0 +1,2437 @@
+{
+  "status": "passed",
+  "checks": 224,
+  "passed": 224,
+  "failures": [],
+  "details": [
+    {
+      "name": "batch_completed_20_of_20",
+      "passed": true,
+      "detail": {
+        "status": "completed",
+        "normal_completed": 20
+      }
+    },
+    {
+      "name": "no_infrastructure_failures",
+      "passed": true,
+      "detail": {
+        "failures": 0,
+        "attempts": 20
+      }
+    },
+    {
+      "name": "frozen_posttrain_robotwin_identity",
+      "passed": true,
+      "detail": {
+        "status": "ready",
+        "phase": 9,
+        "port": 18772,
+        "pid": 658612,
+        "trainable_parameters": 0,
+        "memorywam_enabled": false,
+        "release": "posttrain-robotwin",
+        "load_seconds": 6.0385139810387045,
+        "config": {
+          "repository": "/root/wyc/code/lingbot-va2",
+          "model_dir": "/root/wyc/code/lingbot-va2/checkpoints/base",
+          "release_identity": "posttrain-robotwin",
+          "claim": "B_reference_not_pure_base",
+          "port": 18772,
+          "gpu": 3,
+          "simulation_gpu": 2,
+          "video_steps": 25,
+          "action_steps": 50,
+          "seed": 42,
+          "cpu_text_dtype": "float32",
+          "new_training_steps": 0,
+          "service_isolation": "Dedicated phase9 GPU3/18772; existing GPU0/1/2 programs remain untouched"
+        },
+        "episode": {
+          "episode_id": "phase9_s3_put_back_100063_alternate_left_published_suffix",
+          "prompt": "Move the block back to the left mat.",
+          "rng_seed": 42,
+          "frame_st_id": 14,
+          "blocks": 7,
+          "full_reset": true,
+          "half_cache_nonempty": 24,
+          "high_cache_nonempty": 24,
+          "prompt_sha256": "52d64e6229c7d3a5c220ebd2c4470f4a95c7803df853d2ddb61397bfc4ddf59f"
+        }
+      }
+    },
+    {
+      "name": "receipt_count",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 129,
+        "reported": 129
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100065_original_front_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": true,
+        "seconds": 1.0000000474974513,
+        "all_substeps_target_specific_success": true,
+        "substeps": 250,
+        "final_score": {
+          "success": true,
+          "target": "front",
+          "target_index": 2,
+          "block_xyz": [
+            0.09250296652317047,
+            -0.1971382349729538,
+            0.7614997625350952
+          ],
+          "target_xyz": [
+            0.10000000149011612,
+            -0.20000000298023224,
+            0.7409999966621399
+          ],
+          "xy_error_m": 0.008024665066100152,
+          "right_gripper_open": true,
+          "xy_threshold_m": 0.03,
+          "z_threshold_m": 0.77,
+          "xy_distances_to_mats_m": {
+            "left": 0.1341366289264535,
+            "right": 0.1448842615718393,
+            "front": 0.008024665066100152,
+            "back": 0.1972807370767535
+          },
+          "nearest_mat": "front",
+          "score_only_NOT_policy_input": true
+        }
+      }
+    },
+    {
+      "name": "seed100065_original_front_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 133,
+        "reported": 133
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100065_alternate_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100065_alternate_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100084_original_left_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100084_original_left_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 130,
+        "reported": 130
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100084_alternate_front_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": true,
+        "seconds": 1.0000000474974513,
+        "all_substeps_target_specific_success": true,
+        "substeps": 250,
+        "final_score": {
+          "success": true,
+          "target": "front",
+          "target_index": 2,
+          "block_xyz": [
+            0.09034785628318787,
+            -0.19798898696899414,
+            0.7615001797676086
+          ],
+          "target_xyz": [
+            0.10000000149011612,
+            -0.20000000298023224,
+            0.7409999966621399
+          ],
+          "xy_error_m": 0.009859416437755534,
+          "right_gripper_open": true,
+          "xy_threshold_m": 0.03,
+          "z_threshold_m": 0.77,
+          "xy_distances_to_mats_m": {
+            "left": 0.13328381901096373,
+            "right": 0.14705588920696072,
+            "front": 0.009859416437755534,
+            "back": 0.19822412282087204
+          },
+          "nearest_mat": "front",
+          "score_only_NOT_policy_input": true
+        }
+      }
+    },
+    {
+      "name": "seed100084_alternate_front_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100088_original_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100088_original_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100088_alternate_left_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100088_alternate_left_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100082_original_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100082_original_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100082_alternate_back_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100082_alternate_back_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100085_original_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100085_original_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100085_alternate_back_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100085_alternate_back_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100034_original_left_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100034_original_left_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100034_alternate_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100034_alternate_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100032_original_back_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100032_original_back_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 131,
+        "reported": 131
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100032_alternate_front_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": true,
+        "seconds": 1.0000000474974513,
+        "all_substeps_target_specific_success": true,
+        "substeps": 250,
+        "final_score": {
+          "success": true,
+          "target": "front",
+          "target_index": 2,
+          "block_xyz": [
+            0.0878414586186409,
+            -0.19660857319831848,
+            0.7614997029304504
+          ],
+          "target_xyz": [
+            0.10000000149011612,
+            -0.20000000298023224,
+            0.7409999966621399
+          ],
+          "xy_error_m": 0.012622676448485578,
+          "right_gripper_open": true,
+          "xy_threshold_m": 0.03,
+          "z_threshold_m": 0.77,
+          "xy_distances_to_mats_m": {
+            "left": 0.1305731135408407,
+            "right": 0.14802957542602738,
+            "front": 0.012622676448485578,
+            "back": 0.1969841648961562
+          },
+          "nearest_mat": "front",
+          "score_only_NOT_policy_input": true
+        }
+      }
+    },
+    {
+      "name": "seed100032_alternate_front_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100058_alternate_right_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100058_alternate_right_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100058_original_back_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100058_original_back_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 129,
+        "reported": 129
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100061_original_front_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": true,
+        "seconds": 1.0000000474974513,
+        "all_substeps_target_specific_success": true,
+        "substeps": 250,
+        "final_score": {
+          "success": true,
+          "target": "front",
+          "target_index": 2,
+          "block_xyz": [
+            0.09250296652317047,
+            -0.1971382349729538,
+            0.7614997625350952
+          ],
+          "target_xyz": [
+            0.10000000149011612,
+            -0.20000000298023224,
+            0.7409999966621399
+          ],
+          "xy_error_m": 0.008024665066100152,
+          "right_gripper_open": true,
+          "xy_threshold_m": 0.03,
+          "z_threshold_m": 0.77,
+          "xy_distances_to_mats_m": {
+            "left": 0.1341366289264535,
+            "right": 0.1448842615718393,
+            "front": 0.008024665066100152,
+            "back": 0.1972807370767535
+          },
+          "nearest_mat": "front",
+          "score_only_NOT_policy_input": true
+        }
+      }
+    },
+    {
+      "name": "seed100061_original_front_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 133,
+        "reported": 133
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100061_alternate_left_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100061_alternate_left_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100063_original_back_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100063_original_back_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:wam_action_count",
+      "passed": true,
+      "detail": {
+        "jsonl": 224,
+        "reported": 224
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:prefix_separate_100",
+      "passed": true,
+      "detail": {
+        "jsonl": 100,
+        "reported": 100
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:suffix_policy_isolation",
+      "passed": true,
+      "detail": {
+        "vlm_calls": 0,
+        "fastwam_calls": 0,
+        "rgbd_or_analytic_suffix_actions": 0,
+        "new_training_steps": 0
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:suffix_action_source",
+      "passed": true,
+      "detail": {
+        "auxiliary_prefix": "phase7 analytic executor with privileged actor proposals; before suffix; separately logged and excluded from WAM action count",
+        "target_condition": "text target label only; no numeric pose or target image",
+        "action_decode_and_driver": "fixed phase-eight numeric decoder plus unchanged MPLib EE adapter",
+        "scorer": "actor/mat poses, contacts, gripper and native stage after actions only",
+        "suffix_action_choice": "LingBot-VA posttrain-robotwin only"
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:camera_contract",
+      "passed": true,
+      "detail": {
+        "environment": "RMBench",
+        "task": "put_back_block",
+        "camera_contract": "published_D435_head_and_wrists",
+        "fovy_degrees": 37,
+        "width": 320,
+        "height": 240,
+        "controller": "same_project_MPLib_EE_adapter",
+        "change_scope": "process-local head/wrist camera types only",
+        "phase8_contract_reused": true,
+        "original_repositories_edited": false
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:prefix_boundary",
+      "passed": true,
+      "detail": {
+        "source": "phase7_TaskSpatialExecutor_v7_v4_with_privileged_prefix_proposals",
+        "scope": "auxiliary_prefix_NOT_WAM_action_NOT_full_task_success",
+        "uses_actor_pose_and_native_stage": true,
+        "actual_prefix_commands": 100,
+        "move_to_center_commands": 74,
+        "press_and_park_commands": 26,
+        "prefix_command_log": "/root/wyc/code/vista_wam_validation_20261010/phase9/s3_put_back_paired_v1/runs/seed100063_alternate_left_published_suffix/auxiliary_prefix/actual_actions.jsonl",
+        "validated_precedent": "phase7 put_back_block 10/10 memory condition; not counted here",
+        "provided_to_WAM": false,
+        "wam_context_policy": "fresh_reset_at_suffix_boundary_no_prefix_history_for_either_condition",
+        "suffix_boundary": {
+          "stage_id": 1,
+          "press_cnt": 1,
+          "block_in_center": true
+        }
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:physical_evidence",
+      "passed": true,
+      "detail": "required NPZ and head RGB"
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:success_semantics",
+      "passed": true,
+      "detail": {
+        "performed": false,
+        "seconds": 0.0,
+        "all_substeps_target_specific_success": false,
+        "substeps": 0
+      }
+    },
+    {
+      "name": "seed100063_alternate_left_published_suffix:never_full_task_claim",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "seed100032:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100032:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3",
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3"
+        ],
+        "suffix": [
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809",
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809"
+        ]
+      }
+    },
+    {
+      "name": "seed100034:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100034:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "158cb3ec96b0628827493e2b8a36c72436353c55172fa04ae330c18121896efc",
+          "158cb3ec96b0628827493e2b8a36c72436353c55172fa04ae330c18121896efc"
+        ],
+        "suffix": [
+          "f139165814f42a9387e9ec97198f3f5e4b3c0dd8a3b8461cd8120085d1b9dffe",
+          "f139165814f42a9387e9ec97198f3f5e4b3c0dd8a3b8461cd8120085d1b9dffe"
+        ]
+      }
+    },
+    {
+      "name": "seed100058:paired_conditions",
+      "passed": true,
+      "detail": [
+        "alternate",
+        "original"
+      ]
+    },
+    {
+      "name": "seed100058:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3",
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3"
+        ],
+        "suffix": [
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809",
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809"
+        ]
+      }
+    },
+    {
+      "name": "seed100061:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100061:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "134247f22b71fb6c3f16e042b8dd8561a5436e7c91b94a323c0396c5664daca5",
+          "134247f22b71fb6c3f16e042b8dd8561a5436e7c91b94a323c0396c5664daca5"
+        ],
+        "suffix": [
+          "0e3e2aeebbbad373c06c5800b217be043d03a4f3737c6df1945e507fa6feb377",
+          "0e3e2aeebbbad373c06c5800b217be043d03a4f3737c6df1945e507fa6feb377"
+        ]
+      }
+    },
+    {
+      "name": "seed100063:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100063:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3",
+          "d2fe0d0f416b6747dbe606409c69dd39bed84b53c5b66b960d73791db1af08d3"
+        ],
+        "suffix": [
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809",
+          "610fefbbf9428ffd2950a14502dbbe773644333b0e8076693cba28cf7e98a809"
+        ]
+      }
+    },
+    {
+      "name": "seed100065:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100065:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "134247f22b71fb6c3f16e042b8dd8561a5436e7c91b94a323c0396c5664daca5",
+          "134247f22b71fb6c3f16e042b8dd8561a5436e7c91b94a323c0396c5664daca5"
+        ],
+        "suffix": [
+          "0e3e2aeebbbad373c06c5800b217be043d03a4f3737c6df1945e507fa6feb377",
+          "0e3e2aeebbbad373c06c5800b217be043d03a4f3737c6df1945e507fa6feb377"
+        ]
+      }
+    },
+    {
+      "name": "seed100082:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100082:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef",
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef"
+        ],
+        "suffix": [
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d",
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d"
+        ]
+      }
+    },
+    {
+      "name": "seed100084:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100084:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "158cb3ec96b0628827493e2b8a36c72436353c55172fa04ae330c18121896efc",
+          "158cb3ec96b0628827493e2b8a36c72436353c55172fa04ae330c18121896efc"
+        ],
+        "suffix": [
+          "f139165814f42a9387e9ec97198f3f5e4b3c0dd8a3b8461cd8120085d1b9dffe",
+          "f139165814f42a9387e9ec97198f3f5e4b3c0dd8a3b8461cd8120085d1b9dffe"
+        ]
+      }
+    },
+    {
+      "name": "seed100085:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100085:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef",
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef"
+        ],
+        "suffix": [
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d",
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d"
+        ]
+      }
+    },
+    {
+      "name": "seed100088:paired_conditions",
+      "passed": true,
+      "detail": [
+        "original",
+        "alternate"
+      ]
+    },
+    {
+      "name": "seed100088:same_reset_and_suffix_initial",
+      "passed": true,
+      "detail": {
+        "reset": [
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef",
+          "aed4136848cbf654c8d204bc115e2207cdc71e803609b75b3ca40af0ae24f7ef"
+        ],
+        "suffix": [
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d",
+          "9f45afa14aad49be551ac4da1074dd4ad193a318e3dde6a4b9ac0f1dfffd3f9d"
+        ]
+      }
+    },
+    {
+      "name": "source_hash:runtime/rmbench_d435_phase9.py",
+      "passed": true,
+      "detail": {
+        "expected": "2de9958cf87a5512a19018af66847bd84289f66bf93b769b5c65646f7fc55b2c",
+        "actual": "2de9958cf87a5512a19018af66847bd84289f66bf93b769b5c65646f7fc55b2c"
+      }
+    },
+    {
+      "name": "source_hash:evaluation/evaluate_put_back_s3_v5.py",
+      "passed": true,
+      "detail": {
+        "expected": "cdee129307c3b7c841d67d2545c1e43afd6acc0503b317cb47ec53aaba2450a6",
+        "actual": "cdee129307c3b7c841d67d2545c1e43afd6acc0503b317cb47ec53aaba2450a6"
+      }
+    },
+    {
+      "name": "source_hash:evaluation/run_phase9_s3_batch_v5.py",
+      "passed": true,
+      "detail": {
+        "expected": "2d36026725cdaf9199942cf8b356d2330a29712f7167e646f0364e43c563e00c",
+        "actual": "2d36026725cdaf9199942cf8b356d2330a29712f7167e646f0364e43c563e00c"
+      }
+    },
+    {
+      "name": "source_hash:runtime/task_spatial_executor_v7_v4.py",
+      "passed": true,
+      "detail": {
+        "expected": "d4b58f201e04363d76841bbb4daf1f3b6c14c73b21c94e22635e0e01052e908c",
+        "actual": "d4b58f201e04363d76841bbb4daf1f3b6c14c73b21c94e22635e0e01052e908c"
+      }
+    },
+    {
+      "name": "source_hash:runtime/task_spatial_executor_v7_v3.py",
+      "passed": true,
+      "detail": {
+        "expected": "5a4abdcb28776ed76488734a0af471ac1c6b63d0a34e149bb39f5dc096a7fa4f",
+        "actual": "5a4abdcb28776ed76488734a0af471ac1c6b63d0a34e149bb39f5dc096a7fa4f"
+      }
+    },
+    {
+      "name": "source_hash:runtime/spatial_executor_v7.py",
+      "passed": true,
+      "detail": {
+        "expected": "fe6706b47942bb9d1ba1e3c993b36d4f37d903fe40bb49b0196143bb701b26b7",
+        "actual": "fe6706b47942bb9d1ba1e3c993b36d4f37d903fe40bb49b0196143bb701b26b7"
+      }
+    },
+    {
+      "name": "source_hash:runtime/robotwin_numeric_contract.py",
+      "passed": true,
+      "detail": {
+        "expected": "db11157d10fb41000d2a275c7a51ac48b918e2d5e5ab3aaaab57a0466cfdc7d1",
+        "actual": "db11157d10fb41000d2a275c7a51ac48b918e2d5e5ab3aaaab57a0466cfdc7d1"
+      }
+    },
+    {
+      "name": "source_hash:runtime/lingbot_client.py",
+      "passed": true,
+      "detail": {
+        "expected": "3316d8eafe49da6def4af3c5a8bf635cab921fefd84f9803858f9f4e33711eb6",
+        "actual": "3316d8eafe49da6def4af3c5a8bf635cab921fefd84f9803858f9f4e33711eb6"
+      }
+    },
+    {
+      "name": "source_hash:runtime/planner_guard.py",
+      "passed": true,
+      "detail": {
+        "expected": "1c4548db9cefddc3be981409ba75c12ded1bff46d7c72402d0c57f683d61e4c1",
+        "actual": "1c4548db9cefddc3be981409ba75c12ded1bff46d7c72402d0c57f683d61e4c1"
+      }
+    },
+    {
+      "name": "source_hash:runtime/phase9_lingbot_server.py",
+      "passed": true,
+      "detail": {
+        "expected": "387d2ca7b0a46d791fbf4ae93bd82c4192c16fe85bef7636692c51f200d83df5",
+        "actual": "387d2ca7b0a46d791fbf4ae93bd82c4192c16fe85bef7636692c51f200d83df5"
+      }
+    },
+    {
+      "name": "source_hash:runtime/manage_phase9.py",
+      "passed": true,
+      "detail": {
+        "expected": "69bdc0135fc9eda8e36d7ebd1e095a53e05d35f8c289cf612406f814af482e3e",
+        "actual": "69bdc0135fc9eda8e36d7ebd1e095a53e05d35f8c289cf612406f814af482e3e"
+      }
+    },
+    {
+      "name": "source_hash:phase2_runtime.py",
+      "passed": true,
+      "detail": {
+        "expected": "5218e153448aae98e97801d2c4da36ca1e76b96b87c7eef84c57d0c06ba1d618",
+        "actual": "5218e153448aae98e97801d2c4da36ca1e76b96b87c7eef84c57d0c06ba1d618"
+      }
+    },
+    {
+      "name": "source_hash:configs/phase9_lingbot.json",
+      "passed": true,
+      "detail": {
+        "expected": "409447869b261bddad3f30d3e20b9c7a23d3e2112a2ace7d80ef0efdd4297e59",
+        "actual": "409447869b261bddad3f30d3e20b9c7a23d3e2112a2ace7d80ef0efdd4297e59"
+      }
+    },
+    {
+      "name": "source_hash:phase8/s0_identity_v1/fresh_weight_hashes.json",
+      "passed": true,
+      "detail": {
+        "expected": "8bb0362548fad79b91b90aa0c5b72d42cc76b592cae1e42781db83139f26f26d",
+        "actual": "8bb0362548fad79b91b90aa0c5b72d42cc76b592cae1e42781db83139f26f26d"
+      }
+    },
+    {
+      "name": "source_hash:docs/plans/第九阶段口径B执行依据_20261014.md",
+      "passed": true,
+      "detail": {
+        "expected": "2dc2081959a9e7d59854023a1040eefece86eb93278d2fe3a97eb14d8d690de1",
+        "actual": "2dc2081959a9e7d59854023a1040eefece86eb93278d2fe3a97eb14d8d690de1"
+      }
+    },
+    {
+      "name": "source_hash:/root/wyc/code/RMBench/envs/put_back_block.py",
+      "passed": true,
+      "detail": {
+        "expected": "c9b3a84566b434c6f73189d9ea7354851d3be48004569ad60675c11cc452d18d",
+        "actual": "c9b3a84566b434c6f73189d9ea7354851d3be48004569ad60675c11cc452d18d"
+      }
+    },
+    {
+      "name": "source_hash:/root/wyc/code/RMBench/envs/_base_task.py",
+      "passed": true,
+      "detail": {
+        "expected": "824817232b63ef951a2a8042737e4c6529f174f0127d5c27df4bdcaf5ccd90ce",
+        "actual": "824817232b63ef951a2a8042737e4c6529f174f0127d5c27df4bdcaf5ccd90ce"
+      }
+    },
+    {
+      "name": "source_hash:/root/wyc/code/RMBench/envs/robot/robot.py",
+      "passed": true,
+      "detail": {
+        "expected": "c0a89268d2deb4ce6cae62977a9f5c798deea23ffd75c4a29821b7f8a397776e",
+        "actual": "c0a89268d2deb4ce6cae62977a9f5c798deea23ffd75c4a29821b7f8a397776e"
+      }
+    },
+    {
+      "name": "source_hash:/root/wyc/code/RMBench/task_config/demo_clean.yml",
+      "passed": true,
+      "detail": {
+        "expected": "9478770981228489c1ba505508f4f219a3204c07750e8e989a7e6ba911c1ea83",
+        "actual": "9478770981228489c1ba505508f4f219a3204c07750e8e989a7e6ba911c1ea83"
+      }
+    },
+    {
+      "name": "source_hash:/root/wyc/code/RMBench/task_config/_camera_config.yml",
+      "passed": true,
+      "detail": {
+        "expected": "ef5711a6457161277cfa23400df9f650d93a97681ad47afb454408132a77443e",
+        "actual": "ef5711a6457161277cfa23400df9f650d93a97681ad47afb454408132a77443e"
+      }
+    }
+  ]
+}

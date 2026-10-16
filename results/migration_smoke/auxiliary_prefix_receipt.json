@@ -1,0 +1,6 @@
+{
+  "valid_suffix_boundary": true,
+  "actual_commands": 100,
+  "action_source": "external analytic executor",
+  "provided_to_wam_history": false
+}

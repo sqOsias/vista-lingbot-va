@@ -1,0 +1,2041 @@
+{
+  "status": "completed",
+  "scope": "RGBD-assisted VISTA-memory analytic harness NOT LingBot or official RGB-only leaderboard",
+  "planned_pairs": 90,
+  "terminal_pairs": 90,
+  "planned_episodes": 180,
+  "task_rows": [
+    {
+      "task": "observe_and_pickup",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "unknown_abstention": 6,
+            "completed_grasp_primitive": 4
+          },
+          "median_actions": 16.0,
+          "median_wall_seconds_including_queue": 36.33423535648035,
+          "median_vlm_calls": 3.0,
+          "attempt_count": 10,
+          "retention_1s": 0,
+          "retention_5s": 0,
+          "selection_category_correct": 1,
+          "selection_nearest_instance_correct": 0,
+          "selection_unknown": 6
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 5,
+          "intention_to_test_rate": 0.5,
+          "valid_case_success_rate": 0.5,
+          "exact95_interval_valid": [
+            0.18708602844739855,
+            0.8129139715526015
+          ],
+          "failure_terminations": {
+            "model_or_geometry_rejection": 2,
+            "completed_grasp_primitive": 3
+          },
+          "median_actions": 76.0,
+          "median_wall_seconds_including_queue": 52.81507965948549,
+          "median_vlm_calls": 3.0,
+          "attempt_count": 10,
+          "retention_1s": 5,
+          "retention_5s": 5,
+          "selection_category_correct": 10,
+          "selection_nearest_instance_correct": 8,
+          "selection_unknown": 0
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 5,
+        "current_only_success": 0,
+        "both_failure": 5
+      },
+      "exact_p_descriptive": 0.0625,
+      "success_difference_points": 50,
+      "holm_p_descriptive": 0.375
+    },
+    {
+      "task": "put_back_block",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "budget_or_decision_limit": 10
+          },
+          "median_actions": 500.0,
+          "median_wall_seconds_including_queue": 375.11387909800396,
+          "median_vlm_calls": 7.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 10,
+          "intention_to_test_rate": 1.0,
+          "valid_case_success_rate": 1.0,
+          "exact95_interval_valid": [
+            0.6915028921812392,
+            1.0
+          ],
+          "failure_terminations": {},
+          "median_actions": 158.0,
+          "median_wall_seconds_including_queue": 113.32951372247771,
+          "median_vlm_calls": 1.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 10,
+        "current_only_success": 0,
+        "both_failure": 0
+      },
+      "exact_p_descriptive": 0.001953125,
+      "success_difference_points": 100,
+      "holm_p_descriptive": 0.017578125
+    },
+    {
+      "task": "rearrange_blocks",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "budget_or_decision_limit": 10
+          },
+          "median_actions": 464.0,
+          "median_wall_seconds_including_queue": 578.6407236119849,
+          "median_vlm_calls": 16.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 8,
+          "intention_to_test_rate": 0.8,
+          "valid_case_success_rate": 0.8,
+          "exact95_interval_valid": [
+            0.4439045376923585,
+            0.9747892736731666
+          ],
+          "failure_terminations": {
+            "visual_done": 2
+          },
+          "median_actions": 158.0,
+          "median_wall_seconds_including_queue": 111.79636182298418,
+          "median_vlm_calls": 1.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 8,
+        "current_only_success": 0,
+        "both_failure": 2
+      },
+      "exact_p_descriptive": 0.0078125,
+      "success_difference_points": 80,
+      "holm_p_descriptive": 0.0546875
+    },
+    {
+      "task": "swap_blocks",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "budget_or_decision_limit": 3,
+            "visual_unknown": 7
+          },
+          "median_actions": 555.0,
+          "median_wall_seconds_including_queue": 713.7839236094733,
+          "median_vlm_calls": 17.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_done": 7,
+            "budget_or_decision_limit": 3
+          },
+          "median_actions": 176.0,
+          "median_wall_seconds_including_queue": 286.6402884894924,
+          "median_vlm_calls": 9.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 0,
+        "current_only_success": 0,
+        "both_failure": 10
+      },
+      "exact_p_descriptive": 1.0,
+      "success_difference_points": 0,
+      "holm_p_descriptive": 1.0
+    },
+    {
+      "task": "swap_T",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 10
+          },
+          "median_actions": 0.0,
+          "median_wall_seconds_including_queue": 73.59726323600626,
+          "median_vlm_calls": 2.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 10
+          },
+          "median_actions": 0.0,
+          "median_wall_seconds_including_queue": 74.39645700500114,
+          "median_vlm_calls": 2.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 0,
+        "current_only_success": 0,
+        "both_failure": 10
+      },
+      "exact_p_descriptive": 1.0,
+      "success_difference_points": 0,
+      "holm_p_descriptive": 1.0
+    },
+    {
+      "task": "press_button",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "budget_or_decision_limit": 10
+          },
+          "median_actions": 416.0,
+          "median_wall_seconds_including_queue": 610.9155251305201,
+          "median_vlm_calls": 17.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 10,
+          "intention_to_test_rate": 1.0,
+          "valid_case_success_rate": 1.0,
+          "exact95_interval_valid": [
+            0.6915028921812392,
+            1.0
+          ],
+          "failure_terminations": {},
+          "median_actions": 245.0,
+          "median_wall_seconds_including_queue": 194.51978840804077,
+          "median_vlm_calls": 2.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 10,
+        "current_only_success": 0,
+        "both_failure": 0
+      },
+      "exact_p_descriptive": 0.001953125,
+      "success_difference_points": 100,
+      "holm_p_descriptive": 0.017578125
+    },
+    {
+      "task": "cover_blocks",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 10
+          },
+          "median_actions": 74.0,
+          "median_wall_seconds_including_queue": 166.87065178903867,
+          "median_vlm_calls": 4.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 10
+          },
+          "median_actions": 0.0,
+          "median_wall_seconds_including_queue": 72.30028820649022,
+          "median_vlm_calls": 2.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 0,
+        "current_only_success": 0,
+        "both_failure": 10
+      },
+      "exact_p_descriptive": 1.0,
+      "success_difference_points": 0,
+      "holm_p_descriptive": 1.0
+    },
+    {
+      "task": "blocks_ranking_try",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 0,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 1,
+          "infrastructure_errors": 9,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.975
+          ],
+          "failure_terminations": {
+            "budget_or_decision_limit": 1
+          },
+          "median_actions": 832,
+          "median_wall_seconds_including_queue": 1239.1625169889885,
+          "median_vlm_calls": 64,
+          "attempt_count": 20
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 5,
+          "infrastructure_errors": 5,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.5218237501049814
+          ],
+          "failure_terminations": {
+            "visual_unknown": 3,
+            "budget_or_decision_limit": 2
+          },
+          "median_actions": 286,
+          "median_wall_seconds_including_queue": 720.8510947540053,
+          "median_vlm_calls": 24,
+          "attempt_count": 17
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 0,
+        "current_only_success": 0,
+        "both_failure": 0
+      },
+      "exact_p_descriptive": null,
+      "success_difference_points": 0
+    },
+    {
+      "task": "battery_try",
+      "scheduled_pairs": 10,
+      "terminal_pairs": 10,
+      "valid_pairs": 10,
+      "conditions": {
+        "current": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 9,
+            "model_output_rejection": 1
+          },
+          "median_actions": 259.0,
+          "median_wall_seconds_including_queue": 353.9734525264648,
+          "median_vlm_calls": 9.0,
+          "attempt_count": 10
+        },
+        "memory": {
+          "scheduled": 10,
+          "terminal": 10,
+          "normal_completed": 10,
+          "infrastructure_errors": 0,
+          "native_success": 0,
+          "intention_to_test_rate": 0.0,
+          "valid_case_success_rate": 0.0,
+          "exact95_interval_valid": [
+            0.0,
+            0.3084971078187608
+          ],
+          "failure_terminations": {
+            "visual_unknown": 9,
+            "visual_done": 1
+          },
+          "median_actions": 148.0,
+          "median_wall_seconds_including_queue": 197.91400318301748,
+          "median_vlm_calls": 6.0,
+          "attempt_count": 10
+        }
+      },
+      "paired_table": {
+        "both_success": 0,
+        "memory_only_success": 0,
+        "current_only_success": 0,
+        "both_failure": 10
+      },
+      "exact_p_descriptive": 1.0,
+      "success_difference_points": 0,
+      "holm_p_descriptive": 1.0
+    }
+  ],
+  "pair_details": [
+    {
+      "task": "observe_and_pickup",
+      "seed": 100017,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100017_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100017_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100016,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100016_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100016_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100020,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100020_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100020_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100019,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100019_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100019_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100021,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100021_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100021_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100022,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100022_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100022_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100024,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100024_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100024_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100023,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100023_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100023_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100025,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100025_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100025_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "observe_and_pickup",
+      "seed": 100026,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100026_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/observe_ablation_v1/runs/observe_and_pickup_seed100026_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100013,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100013_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100013_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100018,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100018_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100018_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100030,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100030_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100030_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100031,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100031_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100031_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100033,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100033_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100033_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100053,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100053_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100053_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100075,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100075_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100075_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100077,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100077_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100077_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100092,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100092_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100092_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "put_back_block",
+      "seed": 100097,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100097_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/put_back_block_seed100097_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100033,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100033_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100033_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100035,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100035_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100035_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100036,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100036_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100036_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100037,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100037_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100037_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100041,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100041_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100041_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100060,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100060_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100060_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100062,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100062_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100062_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100068,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100068_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100068_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100082,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100082_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100082_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "rearrange_blocks",
+      "seed": 100094,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100094_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/rearrange_blocks_seed100094_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100041,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100041_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100041_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100053,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100053_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100053_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100057,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100057_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100057_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100089,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100089_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100089_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100095,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100095_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100095_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100119,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100119_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100119_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100127,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100127_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100127_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100137,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100137_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100137_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100148,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100148_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100148_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_blocks",
+      "seed": 100156,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100156_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_blocks_seed100156_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100030,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100030_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100030_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100032,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100032_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100032_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100039,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100039_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100039_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100049,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100049_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100049_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100071,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100071_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100071_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100074,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100074_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100074_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100081,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100081_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100081_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100086,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100086_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100086_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100092,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100092_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100092_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "swap_T",
+      "seed": 100099,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100099_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/swap_T_seed100099_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100028,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100028_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100028_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100036,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100036_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100036_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100043,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100043_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100043_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100046,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100046_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100046_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100054,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100054_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100054_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100058,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100058_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100058_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100066,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100066_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100066_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100085,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100085_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100085_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100090,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100090_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100090_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "press_button",
+      "seed": 100099,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100099_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/press_button_seed100099_memory",
+        "status": "completed",
+        "native_success": true
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100018,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100018_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100018_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100027,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100027_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100027_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100032,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100032_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100032_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100039,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100039_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100039_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100042,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100042_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100042_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100046,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100046_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100046_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100050,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100050_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100050_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100054,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100054_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100054_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100078,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100078_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100078_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "cover_blocks",
+      "seed": 100100,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100100_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/cover_blocks_seed100100_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100013,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100013_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100013_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100037,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100037_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100037_memory_retry1",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100043,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100043_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100043_memory_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100050,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100050_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100050_memory_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100057,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100057_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100057_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100068,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100068_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100068_memory_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100072,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100072_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100072_memory_retry1",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100079,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100079_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100079_memory_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100082,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100082_current_retry1",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100082_memory_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      }
+    },
+    {
+      "task": "blocks_ranking_try",
+      "seed": 100092,
+      "valid_pair": false,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100092_current_retry1",
+        "status": "infrastructure_error",
+        "native_success": null
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/blocks_ranking_try_seed100092_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100036,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100036_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100036_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100058,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100058_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100058_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100075,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100075_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100075_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100146,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100146_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100146_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100151,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100151_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100151_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100172,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100172_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100172_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100184,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100184_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100184_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100187,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100187_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100187_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100225,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100225_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100225_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    },
+    {
+      "task": "battery_try",
+      "seed": 100252,
+      "valid_pair": true,
+      "current": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100252_current",
+        "status": "completed",
+        "native_success": false
+      },
+      "memory": {
+        "output": "/root/wyc/code/vista_wam_validation_20261010/phase7/nine_task_eval_v2/runs/battery_try_seed100252_memory",
+        "status": "completed",
+        "native_success": false
+      }
+    }
+  ],
+  "aggregate": {
+    "current": {
+      "native_success": 0,
+      "scheduled": 90,
+      "normal_completed": 81,
+      "infrastructure_errors": 9,
+      "macro_task_success_rate": 0.0
+    },
+    "memory": {
+      "native_success": 33,
+      "scheduled": 90,
+      "normal_completed": 85,
+      "infrastructure_errors": 5,
+      "macro_task_success_rate": 0.36666666666666664
+    }
+  },
+  "protocol": {
+    "frozen_sources_unchanged": true,
+    "source_checks": {
+      "evaluation/run_eval_v7_resume.py": true,
+      "evaluation/score_phase7.py": true,
+      "evaluation/score_tasks_v7.py": true,
+      "memory/task_harness_v7_v5.py": true,
+      "memory/task_harness_v7_v4.py": true,
+      "memory/task_harness_v7_v3.py": true,
+      "memory/task_layout_v7_v4.py": true,
+      "memory/task_layout_v7.py": true,
+      "memory/metric_scene_v7.py": true,
+      "memory/target_memory.py": true,
+      "runtime/task_spatial_executor_v7_v4.py": true,
+      "runtime/task_spatial_executor_v7_v3.py": true,
+      "runtime/spatial_executor_v7.py": true,
+      "runtime/sim_adapter.py": true,
+      "runtime/planner_guard.py": true,
+      "runtime/robotwin_numeric_contract.py": true,
+      "runtime/lingbot_contract.py": true,
+      "phase2_runtime.py": true,
+      "phase3_observe_probe.py": true,
+      "harness_core.py": true,
+      "/root/wyc/code/RMBench/envs/cover_blocks.py": true,
+      "/root/wyc/code/RMBench/envs/__init__.py": true,
+      "/root/wyc/code/RMBench/envs/rearrange_blocks.py": true,
+      "/root/wyc/code/RMBench/envs/swap_T.py": true,
+      "/root/wyc/code/RMBench/envs/observe_and_pickup.py": true,
+      "/root/wyc/code/RMBench/envs/place_block_mat.py": true,
+      "/root/wyc/code/RMBench/envs/swap_blocks.py": true,
+      "/root/wyc/code/RMBench/envs/press_button.py": true,
+      "/root/wyc/code/RMBench/envs/put_back_block.py": true,
+      "/root/wyc/code/RMBench/envs/blocks_ranking_try.py": true,
+      "/root/wyc/code/RMBench/envs/battery_try.py": true,
+      "/root/wyc/code/RMBench/envs/_base_task.py": true,
+      "/root/wyc/code/RMBench/envs/_GLOBAL_CONFIGS.py": true,
+      "/root/wyc/code/RMBench/envs/robot/robot.py": true,
+      "/root/wyc/code/RMBench/envs/robot/planner.py": true,
+      "/root/wyc/code/RMBench/task_config/demo_clean.yml": true,
+      "/root/wyc/code/RMBench/task_config/_eval_step_limit.yml": true,
+      "evaluation/evaluate_tasks_v7_v7.py": true,
+      "configs/phase7_tasks_v7.json": true,
+      "memory/task_layout_v7_v5.py": true
+    },
+    "observe_source_checks": {
+      "runtime/spatial_executor_v7.py": true,
+      "runtime/sim_adapter.py": true,
+      "runtime/planner_guard.py": true,
+      "memory/visual_controller.py": true,
+      "memory/target_memory.py": true,
+      "memory/rgbd_target.py": true,
+      "evaluation/evaluate_observe_v7.py": true,
+      "evaluation/score_phase7.py": true,
+      "evaluation/run_eval_v7.py": true
+    },
+    "paired_initial_rgb_hash_mismatches": [],
+    "policy_truth_or_training_or_WAM_flag_violations": [],
+    "policy_flag_records_unavailable_due_to_infrastructure": [
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100013,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100037,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100043,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100043,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100050,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100050,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100057,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100068,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100068,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100072,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100079,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100079,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100082,
+        "status": "infrastructure_error"
+      },
+      {
+        "task": "blocks_ranking_try",
+        "seed": 100092,
+        "status": "infrastructure_error"
+      }
+    ],
+    "verified_policy_flag_record_count": 166,
+    "prespecified_holm_family_size": 9
+  },
+  "limitations": [
+    "10 scenes per task, expert-solvability-filtered subset; project freshness does not establish absence from foundation training",
+    "Memory includes real image/metric/attempt state and public-rule plan reuse; eight tasks do not have matched VLM call budgets",
+    "Observe has exactly3 stateless VLM calls per condition and the same fixed grasp",
+    "Six shared simulator workers and serialized VLM queue affect wall-clock latency",
+    "Separate interfaces/grades for complex tasks may run yet fail; no nine-task neural WAM benefit is claimed"
+  ]
+}

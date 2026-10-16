@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "test_scope": "one native WAM action block",
+  "task_success_evaluated": false,
+  "seed": 100065,
+  "target": "front",
+  "max_wam_actions": 16,
+  "new_training_steps": 0,
+  "model_identity": {
+    "status": "ready",
+    "protocol": "portable-v1",
+    "video_guidance_scale": 5,
+    "action_guidance_scale": 1,
+    "port": 18774,
+    "pid": 17224,
+    "trainable_parameters": 0,
+    "memorywam_enabled": false,
+    "release": "robbyant/lingbot-va-posttrain-robotwin",
+    "load_seconds": 6.429471621057019,
+    "config": {
+      "repository": "/root/wyc/code/lingbot-va2",
+      "model_dir": "/root/wyc/code/lingbot-va2/checkpoints/base",
+      "release_identity": "robbyant/lingbot-va-posttrain-robotwin",
+      "port": 18774,
+      "video_steps": 25,
+      "action_steps": 50,
+      "seed": 42,
+      "new_training_steps": 0
+    },
+    "episode": null
+  },
+  "camera_shapes": {
+    "head_camera": [
+      240,
+      320,
+      3
+    ],
+    "left_camera": [
+      240,
+      320,
+      3
+    ],
+    "right_camera": [
+      240,
+      320,
+      3
+    ]
+  },
+  "prefix": {
+    "valid_suffix_boundary": true,
+    "actual_commands": 100,
+    "action_source": "external analytic executor",
+    "provided_to_wam_history": false
+  },
+  "continuation": {
+    "original_function_sha256": "5a2464b31378840a78a0bec66ce59a946a68959db73de56ce12905cfd025d35c",
+    "scoped_function_sha256": "bdd0130c3c495cb0d241f731ca5c81f5bd2820d9640c528a87b382d0833be542",
+    "changes": [
+      "remove eval_success from command admission guard; keep command limit",
+      "retain native check_success and latched eval_success; log first event instead of returning from physical loop"
+    ],
+    "native_success_flag_cleared": false,
+    "official_success_definition_changed": false,
+    "repository_files_changed": false
+  },
+  "instruction": "Pick up the block from the center and place it on the front mat.",
+  "reset_receipt": {
+    "episode_id": "migration_smoke_20261016",
+    "prompt": "Pick up the block from the center and place it on the front mat.",
+    "rng_seed": 42,
+    "frame_st_id": 0,
+    "blocks": 0,
+    "full_reset": true,
+    "half_cache_nonempty": 0,
+    "high_cache_nonempty": 0,
+    "prompt_sha256": "30599bb579b5ece1ed5ebe736c178b6be5ba8c13d8ecdf91040fe3727d602bbf",
+    "seconds": 13.894733740016818
+  },
+  "generated_shape": [
+    16,
+    2,
+    16
+  ],
+  "finite_actions": true,
+  "wam_commands_accepted": 16,
+  "real_feedback_frames": 4,
+  "commit_receipt": {
+    "episode_id": "migration_smoke_20261016",
+    "prompt": "Pick up the block from the center and place it on the front mat.",
+    "rng_seed": 42,
+    "frame_st_id": 2,
+    "blocks": 1,
+    "full_reset": true,
+    "half_cache_nonempty": 24,
+    "high_cache_nonempty": 24,
+    "prompt_sha256": "30599bb579b5ece1ed5ebe736c178b6be5ba8c13d8ecdf91040fe3727d602bbf",
+    "seconds": 7.132652661995962
+  },
+  "final_score_NOT_acceptance_criterion": {
+    "success": false,
+    "target": "front",
+    "block_xyz": [
+      0.09891660511493683,
+      -0.09951355308294296,
+      0.7600001096725464
+    ],
+    "target_xyz": [
+      0.10000000149011612,
+      -0.20000000298023224,
+      0.7409999966621399
+    ],
+    "xy_error_m": 0.10049229005583553,
+    "nearest_mat": "left",
+    "score_only_NOT_policy_input": true
+  },
+  "planner_guard_rejections": {
+    "left": [],
+    "right": []
+  },
+  "migration_acceptance": {
+    "correct_release": true,
+    "frozen_weights": true,
+    "three_cameras": true,
+    "native_action_tensor": true,
+    "decoded_commands_executed": 16,
+    "real_history_committed": true
+  },
+  "wall_seconds": 82.49100649997126
+}

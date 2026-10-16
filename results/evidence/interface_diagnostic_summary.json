@@ -1,0 +1,394 @@
+{
+  "status": "completed",
+  "scope": "one_layout_one_rng_seed_development_only",
+  "actual_model": {
+    "status": "ready",
+    "phase": 10,
+    "revision": "single_layout_v2",
+    "video_guidance_scale": 5,
+    "action_guidance_scale": 1,
+    "port": 18774,
+    "pid": 913418,
+    "trainable_parameters": 0,
+    "memorywam_enabled": false,
+    "release": "posttrain-robotwin",
+    "load_seconds": 6.1264350499841385,
+    "config": {
+      "repository": "/root/wyc/code/lingbot-va2",
+      "model_dir": "/root/wyc/code/lingbot-va2/checkpoints/base",
+      "release_identity": "posttrain-robotwin",
+      "claim": "B_reference_not_pure_base",
+      "port": 18774,
+      "gpu": 3,
+      "simulation_gpu": 2,
+      "video_steps": 25,
+      "action_steps": 50,
+      "seed": 42,
+      "cpu_text_dtype": "float32",
+      "new_training_steps": 0,
+      "service_isolation": "phase10 v2 only GPU3/18774"
+    },
+    "episode": null
+  },
+  "unique_layouts": 1,
+  "seed": 100065,
+  "text_conditions": 8,
+  "visual_conditions": 4,
+  "actual_attempts": 12,
+  "scheduler_startup_failures_before_any_episode": 1,
+  "development_checks": 1,
+  "development_continuation_passed": true,
+  "candidates": {
+    "T_explicit": {
+      "successful_targets": [
+        "front"
+      ],
+      "candidate": false
+    },
+    "T_suffix": {
+      "successful_targets": [
+        "front"
+      ],
+      "candidate": false
+    },
+    "V": {
+      "successful_targets": [
+        "front"
+      ],
+      "candidate": false
+    }
+  },
+  "by_condition": {
+    "T_explicit": {
+      "strict_success": 1,
+      "assigned": 4
+    },
+    "T_suffix": {
+      "strict_success": 1,
+      "assigned": 4
+    },
+    "V": {
+      "strict_success": 1,
+      "assigned": 4
+    }
+  },
+  "records": [
+    {
+      "condition": "T_explicit",
+      "target": "front",
+      "strict_success": true,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": null,
+      "wam_commands": 130,
+      "after_native_success": 0,
+      "contact": true,
+      "lift": true,
+      "termination": "specified_target_strict_success",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_00_T_explicit_front"
+    },
+    {
+      "condition": "T_suffix",
+      "target": "front",
+      "strict_success": true,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": null,
+      "wam_commands": 129,
+      "after_native_success": 0,
+      "contact": true,
+      "lift": true,
+      "termination": "specified_target_strict_success",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_01_T_suffix_front"
+    },
+    {
+      "condition": "T_explicit",
+      "target": "left",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 129,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 95,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_02_T_explicit_left"
+    },
+    {
+      "condition": "T_suffix",
+      "target": "back",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 131,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 93,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_03_T_suffix_back"
+    },
+    {
+      "condition": "T_explicit",
+      "target": "back",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 128,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 96,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_04_T_explicit_back"
+    },
+    {
+      "condition": "T_suffix",
+      "target": "left",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 133,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 91,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_05_T_suffix_left"
+    },
+    {
+      "condition": "T_suffix",
+      "target": "right",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 133,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 91,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_06_T_suffix_right"
+    },
+    {
+      "condition": "T_explicit",
+      "target": "right",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 128,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 96,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/text_07_T_explicit_right"
+    },
+    {
+      "condition": "V",
+      "target": "back",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 129,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 95,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/visual_00_V_back"
+    },
+    {
+      "condition": "V",
+      "target": "left",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 128,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 96,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/visual_01_V_left"
+    },
+    {
+      "condition": "V",
+      "target": "right",
+      "strict_success": false,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": {
+        "step": 128,
+        "direction": "front",
+        "kind": "instantaneous_native_rule_threshold_not_one_second_hold"
+      },
+      "wam_commands": 224,
+      "after_native_success": 96,
+      "contact": true,
+      "lift": true,
+      "termination": "224_WAM_command_budget_exhausted",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/visual_02_V_right"
+    },
+    {
+      "condition": "V",
+      "target": "front",
+      "strict_success": true,
+      "final_effective_placement": "front",
+      "nearest_mat": "front",
+      "first_wrong_threshold": null,
+      "wam_commands": 129,
+      "after_native_success": 0,
+      "contact": true,
+      "lift": true,
+      "termination": "specified_target_strict_success",
+      "output": "/root/wyc/code/vista_wam_validation_20261010/phase10/s3_interface_v2/runs/visual_03_V_front"
+    }
+  ],
+  "placement_confusion": {
+    "T_explicit": {
+      "front": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "back": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "left": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "right": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      }
+    },
+    "T_suffix": {
+      "front": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "back": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "left": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "right": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      }
+    },
+    "V": {
+      "front": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "back": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "left": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      },
+      "right": {
+        "front": 1,
+        "back": 0,
+        "left": 0,
+        "right": 0,
+        "unplaced": 0,
+        "infrastructure_error": 0
+      }
+    }
+  },
+  "audit": {
+    "status": "passed",
+    "checks": 136,
+    "passed": 136,
+    "failures": []
+  },
+  "S4": "not_started",
+  "new_training_steps": 0,
+  "full_task_success": "not_applicable_not_evaluated"
+}

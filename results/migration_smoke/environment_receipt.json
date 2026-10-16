@@ -1,0 +1,8 @@
+{
+  "environment": "RMBench",
+  "task": "put_back_block",
+  "seed": 100065,
+  "camera": "D435",
+  "repository": "/root/wyc/code/RMBench",
+  "upstream_files_modified": false
+}

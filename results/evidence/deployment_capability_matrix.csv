@@ -1,0 +1,15 @@
+﻿model,configuration,task,assigned,normal_completed,native_success,strict_skill_success,strict_skill_unknown
+posttrain-robotwin,LargeView_short_issued_MPLib,click_bell,10,10,9,,10
+posttrain-robotwin,LargeView_short_issued_MPLib,place_mouse_pad,10,10,0,0,0
+posttrain-robotwin,LargeView_short_measured_MPLib,click_bell,3,3,3,,3
+posttrain-robotwin,LargeView_short_measured_MPLib,place_mouse_pad,3,3,0,0,0
+posttrain-robotwin,LargeView_short_issued_original_controller,click_bell,3,3,3,,3
+posttrain-robotwin,LargeView_short_issued_original_controller,place_mouse_pad,3,3,0,0,0
+posttrain-robotwin,D435_short_issued_MPLib,click_bell,3,3,3,,3
+posttrain-robotwin,D435_short_issued_MPLib,place_mouse_pad,3,3,3,3,0
+posttrain-robotwin,D435_published_template_issued_MPLib,click_bell,10,10,10,,10
+posttrain-robotwin,D435_published_template_issued_MPLib,place_mouse_pad,10,10,10,9,0
+posttrain-robotwin,D435_published_template_confirmation,click_bell,0,0,0,,0
+posttrain-robotwin,D435_published_template_confirmation,place_mouse_pad,20,20,19,19,0
+official_base,not_confirmed,click_bell,0,,,,
+official_base,not_confirmed,place_mouse_pad,0,,,,

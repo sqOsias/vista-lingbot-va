@@ -1,0 +1,28 @@
+{
+  "third_party": {
+    "lingbot_va": "third_party/lingbot-va",
+    "rmbench": "third_party/RMBench",
+    "robotwin": "third_party/RoboTwin"
+  },
+  "models": {
+    "lingbot_posttrain_robotwin": "checkpoints/lingbot-va-posttrain-robotwin",
+    "qwen3_vl": "checkpoints/Qwen3-VL-8B-Instruct"
+  },
+  "service": {
+    "host": "127.0.0.1",
+    "port": 18774,
+    "gpu": 1,
+    "seed": 42,
+    "video_steps": 25,
+    "action_steps": 50
+  },
+  "simulation": {
+    "gpu": 0,
+    "task": "put_back_block",
+    "seed": 100065,
+    "camera": "D435",
+    "width": 320,
+    "height": 240
+  }
+}
+
